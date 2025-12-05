@@ -104,7 +104,7 @@ export class Database {
     const key = `addons.config.${this.packageName}`;
 
     return new Promise((resolve, reject) => {
-      this?.conn?.get('SELECT value FROM settings WHERE key = ?', [key], (error, row) => {
+      this?.conn?.get('SELECT value FROM settings WHERE key = ?', [key], (error, row: { value: string}) => {
         if (error) {
           reject(error);
         } else if (!row) {

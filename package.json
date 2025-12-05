@@ -1,6 +1,6 @@
 {
   "name": "gateway-addon",
-  "version": "1.2.0-alpha.1",
+  "version": "2.0.0",
   "description": "Bindings for WebThings Gateway add-ons",
   "scripts": {
     "build": "if [ ! -d schema/messages ]; then git submodule init; fi; git submodule update && node generate-version.js && node generate-types.js && tsc -p .",
@@ -22,21 +22,21 @@
     "url": "https://github.com/WebThingsIO/gateway-addon-node/issues"
   },
   "dependencies": {
-    "ajv": "^7.0.4",
-    "sqlite3": "^5.0.1",
-    "ws": "^7.4.3"
+    "ajv": "^7.2.4",
+    "sqlite3": "^5.1.7",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
-    "@types/node": "^15.0.1",
-    "@types/sqlite3": "^3.1.7",
-    "@types/ws": "^7.4.2",
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.3.0",
-    "json-schema-to-typescript": "^10.1.4",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "@types/node": "^20.19.25",
+    "@types/sqlite3": "^3.1.11",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.10.2",
+    "json-schema-to-typescript": "^10.1.5",
+    "prettier": "^2.8.8",
+    "typescript": "^4.9.5"
   },
   "files": [
     "LICENSE",
