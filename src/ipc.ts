@@ -55,10 +55,8 @@ export class IpcSocket {
         if (validate) {
           this.validators[schema.properties.messageType.const] = validate;
         }
-      } else {
-        if (process.env.DEBUG) {
-          console.debug(`Ignoring ${schema.$id} because it has no messageType`);
-        }
+      } else if (process.env.DEBUG) {
+        console.debug(`Ignoring ${schema.$id} because it has no messageType`);
       }
     }
 
